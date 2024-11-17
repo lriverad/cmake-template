@@ -3,9 +3,9 @@
 int main(int argc, char **argv) {
   printf("Hello, C!\n");
 
-#ifndef BUILD_DEBUG
+#ifdef NDEBUG
   printf("Release build...\n");
-#else
+#elif defined (DEBUG)
   printf("Debug build...\n");
 #endif
 
