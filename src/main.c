@@ -10,17 +10,14 @@ bool is_running = true;
 void mainloop(void) {
 #ifdef __EMSCRIPTEN__
     if (!is_running) {
-        // Reload app
+        // Restart app
+        is_running = true;
     }
 #endif
 }
 
 int main(int argc, char **argv) {
-    printf("Hello, C!\n");
-
-#ifdef __EMSCRIPTEN__
-    printf("Hello, Emscripten!\n");
-#endif
+    printf("Hello, World!\n");
 
 #ifdef NDEBUG
     printf("Running release build...\n");
