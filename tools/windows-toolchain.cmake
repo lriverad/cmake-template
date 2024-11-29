@@ -20,3 +20,5 @@ endif()
 
 set(CMAKE_WINDOWS_EXPORT_ALL_SYMBOLS TRUE)
 set(CMAKE_RUNTIME_OUTPUT_DIRECTORY "${CMAKE_SOURCE_DIR}/bin/windows/")
+
+set(TOOLCHAIN_PLATFORM "windows" CACHE STRING "Custom name for toolchain")

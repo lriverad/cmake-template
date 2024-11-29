@@ -29,4 +29,3 @@ configure_wasm:
 .PHONY: wasm
 wasm: configure_wasm
 	cmake --build build/wasm/$(BUILD_TYPE)
-	cp src/web/* bin/wasm

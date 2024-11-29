@@ -21,3 +21,5 @@ endif()
 set(CMAKE_INSTALL_RPATH "$ORIGIN")
 set(CMAKE_BUILD_RPATH "$ORIGIN")
 set(CMAKE_RUNTIME_OUTPUT_DIRECTORY "${CMAKE_SOURCE_DIR}/bin/linux/")
+
+set(TOOLCHAIN_PLATFORM "linux" CACHE STRING "Custom name for toolchain")
