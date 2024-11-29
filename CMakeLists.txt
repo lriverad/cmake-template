@@ -64,7 +64,7 @@ elseif(TOOLCHAIN_PLATFORM STREQUAL "wasm")
     add_custom_command(
         TARGET ${PROJECT_NAME} POST_BUILD
         COMMAND ${CMAKE_COMMAND} -E copy_if_different 
-        ${LIB_FILE} "${CMAKE_SOURCE_DIR}/bin/wasm"
+        ${WASM_SRC_FILE} "${CMAKE_SOURCE_DIR}/bin/wasm"
     )
     endforeach()
 
